@@ -1,15 +1,3 @@
-M angular/ngcontainer:latest
+# ngcontainer-os
 
-LABEL maintainer="Relief Melone"
-
-USER root
-
-RUN chgrp -R root /home/circleci && \
-    chmod -R 770 /home/circleci
-
-ENV HOME /home/circleci
-
-USER 1001
-
-ENTRYPOINT ["/bin/bash", "--login"]
-
+Docker container based on angular/ngontainer with the purpose to run on Openshift out of the box.

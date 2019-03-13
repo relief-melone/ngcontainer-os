@@ -1,6 +1,7 @@
 FROM angular/ngcontainer:latest
 
 LABEL maintainer="Relief Melone"
+LABEL repository="https://github.com/relief-melone/ngcontainer-os"
 
 USER root
 
